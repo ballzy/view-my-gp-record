@@ -6,32 +6,36 @@
 
 {% block content %}
 
-  <div class="first-item">
+<div class="first-item">
+  <form>
+    <div class="form-group">
+      <fieldset class="inline">
+        <h2 class="heading-small"><legend>Do you have an online account for your GP?</legend></h2>
 
+        <div>
+          <label class="block-label selection-button-radio" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+            Yes
+          </label>
+        </div>
+        <div>
+          <label class="block-label selection-button-radio" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+            No
+          </label>
+        </div>
+        <div>
+          <label class="block-label selection-button-radio" for="radio-inline-3">
+            <input id="radio-inline-3" type="radio" name="radio-inline-group" value="dont-know">
+            I don't know
+          </label>
+        </div>
 
-
-<form>
-  <div class="form-group">
-    <fieldset class="inline">
-      <h2 class="heading-small"><legend>Do you have an online account for your GP?</legend></h2>
-
-      <div  class="block-label selection-button-radio">
-        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-        <label for="radio-inline-1">Yes</label>
-      </div>
-      <div  class="block-label selection-button-radio">
-        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-        <label for="radio-inline-2">No</label>
-      </div>
-      <div  class="block-label selection-button-radio">
-        <input id="radio-inline-3" type="radio" name="radio-inline-group" value="I dont know">
-        <label for="radio-inline-3">I don't know</label>
-      </div>
-
-    </fieldset>
-  </div>
-  <input class="button" type="submit" value="Continue">
-</form>
+      </fieldset>
+    </div>
+    <input class="button" type="submit" value="Continue">
+  </form>
+</div>
 
 {% endblock %}
 
