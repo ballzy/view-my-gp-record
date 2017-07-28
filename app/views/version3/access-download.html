@@ -1,16 +1,30 @@
 {% extends '_layouts/layout_2-3.html' %}
 
-{% block page_title %}Index : {{serviceName}}{% endblock %}
+{% block page_title %}Access and Download your GP record{{serviceName}}{% endblock %}
 
-{% block pageTitle %}View my GP record{% endblock %}
+{% block pageTitle %}Access and Download your GP record{% endblock %}
 
 {% block content %}
 
-<div class="first-item">
-  <form>
-    <div class="form-group">
+<style>
+figure {
+  margin: 0;
+}
+figure img {
+  max-width: 100%;
+  border: 1px solid #ababab;
+  margin-bottom: 0;
+  padding: 0;
+}
+.media__caption {
+  background-color: #e6eff8;
+  margin-top: 0;
+  padding: 16px
+}
+</style>
 
-      <h1>Access and Download your GP record</h1>
+<div class="first-item">
+    <div class="form-group">
 
       <h2>AIMS</h2>
       <p>The NHS is designing digital services to help patients take control of their own health and care and reduce the pressure on frontline services. </p>
@@ -19,15 +33,31 @@
 
       <h2>What we did?</h2>
       <p>We designed a new GP Online Service to be piloted on NHS.UK,  with a focus on providing citizens access to their GP Record though this service also allows booking  appointments, order repeat medications and view their GP record. </p>
+      <figure class="media">
+        <img src="/images/nhs-medical-record.png" alt="View my medical record">
+        <figcaption class="media__caption">View my medical record</figcaption>
+      </figure>
       <p>This pilot is now live in a small cohort of GP Practices around the country. It will improve our understanding of our users and their needs and help us assess users’ experience of our service, to make sure it meets their needs. </p>
+      <figure class="media">
+        <img src="/images/nhs-appointments.png" alt="Book an appointment">
+        <figcaption class="media__caption">Book an appointment</figcaption>
+      </figure>
       <p>During this pilot we will be testing patients in the pilot’s response and experience accessing their record and other GP online services  on an NHS.UK page. We will carry out research to understand the needs of patients. We will use this insight to improve the usability and patient trust of these services.</p>
+      <figure class="media">
+        <img src="/images/nhs-prescriptions.png" alt="Prescriptions">
+        <figcaption class="media__caption">Manage my prescriptions</figcaption>
+      </figure>
+    </div>
+
+
+
+
+    <div class="form-group">
 
       <h2>The future</h2>
-      <p>This is the future</p>
+      <p>The is the future. There is nothing we can do about it. Trump and May will see to that.</p>
         
     </div>
-    <a class="button" href="login">Continue</a>
-  </form>
 </div>
 
 {% endblock %}
