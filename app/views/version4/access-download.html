@@ -1,0 +1,65 @@
+{% extends '_layouts/layout_2-3.html' %}
+
+{% block page_title %}Access and download your GP record{{serviceName}}{% endblock %}
+
+{% block pageTitle %}Access and download your GP record{% endblock %}
+
+{% block content %}
+
+<style>
+figure {
+  margin: 0;
+}
+figure img {
+  max-width: 100%;
+  border: 1px solid #ababab;
+  margin-bottom: 0;
+  padding: 0;
+}
+.media__caption {
+  background-color: #e6eff8;
+  margin-top: 0;
+  padding: 16px
+}
+</style>
+
+<div class="first-item">
+    <div class="form-group">
+
+      <h2>Goals of the project</h2>
+      <p>The NHS is busy designing new digital services to help patients take control of their own health and care needs. </p>
+      <p>GP online services already offer patients the ability to do certain transactions online, including book GP appointments, order repeat prescriptions and access information in their GP record. </p>
+      <p>Currently, there are many ways to access these online services. The NHS is testing whether patients find it easier and more straightforward to access all these services in one place. </p>
+      <p>Therefore the NHS aims to transform the patient journey by enabling patients to stay on <a href="http://www.nhs.uk">www.nhs.uk</a> to access their online GP services. By doing this, we hope to improve patients experience and gain valuable insight in to several key areas:</p>
+      <ul>
+        <li>The value and impact of the NHS brand on online services</li>
+        <li>The barriers to entry and use of the new process to resolve these</li>
+        <li>The ways in which different features on the product are used</li>
+      </ul>
+      <p>The findings might also help us improve the existing services.</p>
+
+      <h2>What are we doing?</h2>
+      <p>NHS Digital has designed a pilot GP online service which is on www.nhs.uk.This provides patients with the ability to access their GP record, book an appointment, and order repeat prescriptions. </p>
+      <figure class="media">
+        <img src="/images/nhs-medical-record.png" alt="View my medical record">
+        <figcaption class="media__caption">View my medical record</figcaption>
+      </figure>
+      <p>The pilot is now live in a small number of GP practices around the country. It will improve NHS Digital’s understanding of patient needs and help the NHS assess the experience of our services.</p>
+      <figure class="media">
+        <img src="/images/nhs-appointments.png" alt="Book an appointment">
+        <figcaption class="media__caption">Book an appointment</figcaption>
+      </figure>
+      <p>During this stage, feedback will be gathered on patients’ experience of accessing their GP record, and other GP online services.</p>
+      <figure class="media">
+        <img src="/images/nhs-prescriptions.png" alt="Prescriptions">
+        <figcaption class="media__caption">Manage my prescriptions</figcaption>
+      </figure>
+
+      <h2>The future</h2>
+      <p>Once the feedback has been reviewed, the learnings will be used to help design future services. NHS Digital will then share the learnings from the project with a wider audience, including any relevant research that has been done.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
